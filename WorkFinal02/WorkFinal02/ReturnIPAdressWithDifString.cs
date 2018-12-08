@@ -7,8 +7,8 @@ namespace WorkFinal02
     {
         
         public void MetodReturnIPAdressWithDifStrin(String IP_string) {
-            
-            
+            //there is a check directly on reality IP
+
             try
             {
                 String[] bytes = IP_string.Split(new char[] { '.' }, StringSplitOptions.RemoveEmptyEntries);

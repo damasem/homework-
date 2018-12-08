@@ -19,13 +19,9 @@ namespace WorkFinal02
                 Regex r = new Regex(@"[0-9,.]+"); //It does not correspond to any digit, exclamation mark, grid, space.
                 Match m = r.Match(IP_String);
                 int l = IP_String.Length;
-
-                //while (m.Success)
-                //{
-                //    Console.WriteLine("{0}: {1}", m.Index, m.Value);
-                //    m = m.NextMatch();
-                //}
-                if (m.Success & l <= 12 & l >= 4)
+                
+               
+                if (m.Success & l <= 16 & l >= 8)
                 {
                     ValidateStringTrue = true;
                 }
